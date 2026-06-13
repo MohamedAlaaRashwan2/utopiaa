@@ -1,0 +1,28 @@
+.section {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+  
+  .bg {
+    /* ضع background-image هنا أو خليه فاضي لو الـ parallax بس overlay */
+    background-image: url('/about2.jpg'); 
+    background-position: center;
+    background-size: cover;
+    
+    /* عدّل المسار */
+  }
+
+
+.imgut{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  opacity: 40%;
+}

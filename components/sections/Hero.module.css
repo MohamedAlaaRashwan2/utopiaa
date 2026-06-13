@@ -1,0 +1,25 @@
+.hero_h1{
+    bottom: -3vw;
+    z-index: 1;
+    width: 100%;
+    font-size: 16.4vw;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 700;
+    font-style: normal;    line-height: .8;
+    color: #fff;
+    opacity: 25%;
+}
+
+.hero_ul{
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 98%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 35%;
+    z-index: 5;
+}
