@@ -40,14 +40,13 @@ export default function Navbar({ onNavigate }: NavbarProps) {
         <div className="h-full flex items-center justify-between px-6">
 
           {/* left side {Logo} */}
-          <div className="flex gap-2 md:justify-between md:w-[50%]">
-          <div className="flex items-center gap-4 text-white">
+          <div className="flex items-center gap-4 text-white ">
             <div className="font-black text-sm uppercase leading-tight tracking-wide">
               <Image src="/logo.png" width={100} height={100} alt="logo" className="w-25 h-25" />
             </div>
             <div className="w-px h-8 bg-white/20 md:hidden" />
           </div>
-          <div className="flex items-center gap-1 text-white">
+          <div className="hidden md:block flex items-center gap-1 text-white">
           <a href="#"
               onClick={(e) => { e.preventDefault(); onNavigate(0); }}
               className="flex cursor-pointer font-black items-center gap-2 text-[2rem] uppercase tracking-widest"
@@ -57,7 +56,6 @@ export default function Navbar({ onNavigate }: NavbarProps) {
               </svg>
               Home
             </a>
-          </div>
           </div>
           <div className=" md:block hidden flex items-center gap-6 text-white">
             <span
@@ -71,7 +69,7 @@ export default function Navbar({ onNavigate }: NavbarProps) {
           {/* HAMBURGER → X */}
           <button
             onClick={() => setOpen(!open)}
-            className="relative w-10 h-10 md:hidden"
+            className="relative cursor-pointer w-10 h-10 md:hidden"
           >
             <span
               className={`absolute left-0 w-8 h-[2px] bg-white transition-all duration-300
@@ -130,12 +128,6 @@ export default function Navbar({ onNavigate }: NavbarProps) {
             </span>
           ))}
         </div>
-
-        {/* decorative line */}
-        <div
-          className={`absolute left-10 top-0 bottom-0 w-[1px] bg-white/10 transition-all duration-700
-          ${open ? "opacity-100" : "opacity-0"}`}
-        />
       </div>
     </>
   );

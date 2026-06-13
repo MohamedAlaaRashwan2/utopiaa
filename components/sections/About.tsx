@@ -141,9 +141,9 @@ export default function About() {
           </motion.div>
 
           <h2
-  className={Styles.bigTitle}
-  aria-label="Our clients are more than customers."
->
+            className={Styles.bigTitle}
+            aria-label="Our clients are more than customers."
+          >  
   {titleLetters.map((char, i) => (
     <motion.span
       key={i}
